@@ -3,15 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/unslider.css">
+	<link rel="stylesheet" href="css/unslider-dots.css">
 </head>
 <body>
 
 <div class="wrapper">
-	<header class="clearfix">
+
+	<div class="header-outer">
+	<header>
 
 		<div class="top-menu">
 			<a href="" class="logo"><img src="img/logo.png" alt="Gllacy-logo"></a>
@@ -36,12 +40,12 @@
 			<div class="search-form">
 				<form action="">
 					<div class="search-modal"><input type="text" class="search-field" placeholder="Что ищем?"></div>
-					<input type="submit" class="search-btn" value="Поиск">
+					<div class="search-btn-container"><input type="submit" class="search-btn" value="Поиск"></div>
 				</form>
 			</div>
 
 			<div class="login">
-				<a href="" class="login-btn">Вход</a>
+				<div class="login-btn-container"><a href="" class="login-btn">Вход</a></div>
 				<div class="login-modal">
 					<form action="">
 						<p><input type="email" placeholder="Электронная почта" required></p>
@@ -54,7 +58,7 @@
 			</div>
 
 			<div class="cart">
-				<a href="" class="cart-btn">Пусто</a>
+				<div class="cart-btn-container"><a href="" class="cart-btn">Пусто</a></div>
 				<div class="cart-inner">
 					<table>
 						<tr>
@@ -65,7 +69,7 @@
 							<td class="digits">300 руб.</td>
 						</tr>
 						<tr>
-							<td><a href="" class="delete" title="Удалить"></td>
+							<td><a href="" class="delete" title="Удалить"></a></td>
 							<td><img src="img/ice2.png" alt="картинка с мороженым"></td>
 							<td class="ice-name">Клубничный пломбир с присыпкой из белого шоколада</td>
 							<td class="digits">1.5 кг <span>х 300 руб.</span></td>
@@ -82,9 +86,29 @@
 			<p>С 10 до 20, ежедневно</p>
 			<p>8 812 450-25-25</p>
 		</div>
+
 	</header>
+	</div>
 
-
+	<div class="slider-outer">
+		<div class="slider">
+			<ul>
+				<li>
+					<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+					<img src="img/ice-cream-banner.png" alt="ice-banner">
+				</li>
+				<li>
+					<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+					<img src="img/ice-cream-banner.png" alt="ice-banner">
+				</li>
+				<li >
+					<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+					<img src="img/ice-cream-banner.png" alt="ice-banner">
+				</li>
+			</ul>
+			<a class="give-me-button" href="">Давайте оба!</a>
+		</div>
+	</div>
 
 
 
@@ -96,6 +120,17 @@
 
 
 </div> <!-- End of wrapper -->
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/unslider-min.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+		$('.slider').unslider({
+			autoplay: false,
+			arrows: false
+		});
+	});
+</script>
 
 </body>
 </html>
