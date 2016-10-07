@@ -6,109 +6,163 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/unslider.css">
 	<link rel="stylesheet" href="css/unslider-dots.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <div class="wrapper">
 
-	<div class="header-outer">
-	<header>
+<header>
 
-		<div class="top-menu">
-			<a href="" class="logo"><img src="img/logo.png" alt="Gllacy-logo"></a>
-			<nav>
-				<ul class="main-menu">
-					<li class="catalog"><a href="" ><span>Каталог</span></a>
-						<ul class="catalog-submenu">
-							<li><a href="">Новинки</a></li>
-							<li><a href="">Сливочное</a></li>
-							<li><a href="">Щербеты</a></li>
-							<li><a href="">Фруктовый лед</a></li>
-							<li><a href="">Мелорин</a></li>
-						</ul>
-					</li>
-					<li class="shipping"><a href=""><span>Доставка и оплата</span></a></li>
-					<li class="about"><a href=""><span>О компании</span></a></li>
-				</ul>
-			</nav>
+	<div class="top-menu">
+		<a href="" class="logo"><img src="img/logo.png" alt="Gllacy-logo"></a>
+		<nav>
+			<ul class="main-menu">
+				<li class="catalog"><a href="" ><span>Каталог</span></a>
+					<ul class="catalog-submenu">
+						<li><a href="">Новинки</a></li>
+						<li><a href="">Сливочное</a></li>
+						<li><a href="">Щербеты</a></li>
+						<li><a href="">Фруктовый лед</a></li>
+						<li><a href="">Мелорин</a></li>
+					</ul>
+				</li>
+				<li class="shipping"><a href=""><span>Доставка и оплата</span></a></li>
+				<li class="about"><a href=""><span>О компании</span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="header-right">
+		<div class="search-form">
+			<form action="">
+				<div class="search-modal"><input type="text" class="search-field" placeholder="Что ищем?"></div>
+				<div class="search-btn-container"><input type="submit" class="search-btn" value="Поиск"></div>
+			</form>
 		</div>
 
-		<div class="header-right">
-			<div class="search-form">
+		<div class="login">
+			<div class="login-btn-container"><a href="" class="login-btn">Вход</a></div>
+			<div class="login-modal">
 				<form action="">
-					<div class="search-modal"><input type="text" class="search-field" placeholder="Что ищем?"></div>
-					<div class="search-btn-container"><input type="submit" class="search-btn" value="Поиск"></div>
+					<p><input type="email" placeholder="Электронная почта" required></p>
+					<p><input type="password" placeholder="Пароль" required></p>
+					<input type="submit" value="Войти">
+					<a href="" class="forget-pass">Забыли пароль?</a>
+					<a href="" class="registration">Новая регистрация</a>
 				</form>
 			</div>
+		</div>
 
-			<div class="login">
-				<div class="login-btn-container"><a href="" class="login-btn">Вход</a></div>
-				<div class="login-modal">
-					<form action="">
-						<p><input type="email" placeholder="Электронная почта" required></p>
-						<p><input type="password" placeholder="Пароль" required></p>
-						<input type="submit" value="Войти">
-						<a href="" class="forget-pass">Забыли пароль?</a>
-						<a href="" class="registration">Новая регистрация</a>
-					</form>
-				</div>
-			</div>
-
-			<div class="cart">
-				<div class="cart-btn-container"><a href="" class="cart-btn">Пусто</a></div>
-				<div class="cart-inner">
-					<table>
-						<tr>
-							<td><a href="" class="delete" title="Удалить"></a></td>
-							<td><img src="img/ice1.png" alt="картинка с мороженым"></td>
-							<td class="ice-name">Пломбир с апельсиновым джемом</td>
-							<td class="digits">1.5 кг <span>х 200 руб.</span></td>
-							<td class="digits">300 руб.</td>
-						</tr>
-						<tr>
-							<td><a href="" class="delete" title="Удалить"></a></td>
-							<td><img src="img/ice2.png" alt="картинка с мороженым"></td>
-							<td class="ice-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-							<td class="digits">1.5 кг <span>х 300 руб.</span></td>
-							<td class="digits">450 руб.</td>
-						</tr>
-					</table>
-					<p class="total">Итого: 750 руб.</p>
-					<p><input type="submit" value="Оформить заказ"></p>
-				</div>
+		<div class="cart">
+			<div class="cart-btn-container"><a href="" class="cart-btn">Пусто</a></div>
+			<div class="cart-inner">
+				<table>
+					<tr>
+						<td><a href="" class="delete" title="Удалить"></a></td>
+						<td><img src="img/ice1.png" alt="картинка с мороженым"></td>
+						<td class="ice-name">Пломбир с апельсиновым джемом</td>
+						<td class="digits">1.5 кг <span>х 200 руб.</span></td>
+						<td class="digits">300 руб.</td>
+					</tr>
+					<tr>
+						<td><a href="" class="delete" title="Удалить"></a></td>
+						<td><img src="img/ice2.png" alt="картинка с мороженым"></td>
+						<td class="ice-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+						<td class="digits">1.5 кг <span>х 300 руб.</span></td>
+						<td class="digits">450 руб.</td>
+					</tr>
+				</table>
+				<p class="total">Итого: 750 руб.</p>
+				<p><input type="submit" value="Оформить заказ"></p>
 			</div>
 		</div>
-
-		<div class="contacts">
-			<p>С 10 до 20, ежедневно</p>
-			<p>8 812 450-25-25</p>
-		</div>
-
-	</header>
 	</div>
 
-	<div class="slider-outer">
-		<div class="slider">
-			<ul>
-				<li>
-					<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
-					<img src="img/ice-cream-banner.png" alt="ice-banner">
-				</li>
-				<li>
-					<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
-					<img src="img/ice-cream-banner.png" alt="ice-banner">
-				</li>
-				<li >
-					<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
-					<img src="img/ice-cream-banner.png" alt="ice-banner">
-				</li>
-			</ul>
-			<a class="give-me-button" href="">Давайте оба!</a>
-		</div>
+	<div class="contacts">
+		<p>С 10 до 20, ежедневно</p>
+		<p>8 812 450-25-25</p>
 	</div>
+
+</header>
+
+<div class="slider-outer">
+	<div class="slider">
+		<ul>
+			<li>
+				<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+				<img src="img/ice-cream-banner.png" alt="ice-banner">
+			</li>
+			<li>
+				<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+				<img src="img/ice-cream-banner.png" alt="ice-banner">
+			</li>
+			<li >
+				<h2 class="text-wrapper">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+				<img src="img/ice-cream-banner.png" alt="ice-banner">
+			</li>
+		</ul>
+		<a class="give-me-button" href="">Давайте оба!</a>
+	</div>
+</div>
+
+<div class="promo">
+	<div class="promo-top clearfix">
+
+		<div class="raspberry">
+			<img src="img/raspberry-bg.jpg" alt="raspberry-img">
+			<h3>Малинка даром!</h3>
+			<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+			<a class="want-free-btn" href="">Хочу варенье!</a>
+		</div>
+
+		<div class="chocolate">
+			<img src="img/chocolate-bg.jpg" alt="raspberry-img">
+			<h3>Шоколадки даром!</h3>
+			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+			<a class="want-free-btn" href="">Хочу шоколадки!</a>
+		</div>
+
+	</div>
+
+	<div class="promo-bottom clearfix">
+
+		<div class="ice-promo1">
+			<img class="hit" src="img/hit.png" alt="hit">
+			<img src="img/ice-1.png" alt="ice-1">
+			<h2>310 &#8381/кг</h2>
+			<p><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
+			<a href="">Быстрый просмотр</a>
+		</div>
+
+		<div class="ice-promo2">
+			<img class="hit" src="img/hit.png" alt="hit">
+			<img src="img/ice-2.png" alt="ice-2">
+			<h2>380 &#8381/кг</h2>
+			<p><span>Сливочно-кофейное с кусочками шоколада</span></p>
+			<a href="">Быстрый просмотр</a>
+		</div>
+
+		<div class="ice-promo3">
+			<img class="hit" src="img/hit.png" alt="hit">
+			<img src="img/ice-3.png" alt="ice-3">
+			<h2>355 &#8381/кг</h2>
+			<p><span>Сливочно-клубничное с присыпкой из белого шоколада</span></p>
+			<a href="">Быстрый просмотр</a>
+		</div>
+
+		<div class="ice-promo4">
+			<img class="hit" src="img/hit.png" alt="hit">
+			<img src="img/ice-4.png" alt="ice-4">
+			<h2>415 &#8381/кг</h2>
+			<p><span>Сливочное крем-брюле с карамельной подливкой</span></p>
+			<a href="">Быстрый просмотр</a>
+		</div>
+
+	</div>
+</div>
 
 
 

@@ -22,32 +22,35 @@ body {
 	padding-left: 27px;
 	padding-right: 27px;
 	background: #859D8F;
+	position: relative;
 }
 
 /*=============== Header ===============*/
 
-.header-outer {
-	position: relative;
-}
-
 header {
 	position: absolute;
+	top:0;
+	left:0;
 	z-index: 10;
 	width: 100%;
-	/*outline: 1px solid green;*/
+	padding-left: 27px;
+	padding-right: 27px;
 }
 
 .top-menu {
 	float: left;
 	padding-top: 10px;
 	width: 68%;
-	/*outline: 1px solid red;*/
 }
 
 .logo {
 	display: block;
 	float: left;
-	margin-right: 25px;
+	margin-right: 10px;
+}
+
+.logo:hover {
+	opacity: 0.8;
 }
 
 .main-menu {
@@ -57,47 +60,39 @@ header {
 	padding-top: 10px;
 	list-style: none;
 	position: relative;
-	/*outline: 1px solid black;*/
 }
 
-.catalog span,
-.shipping span,
-.about span {
+.main-menu span {
 	border-bottom: 1px solid #b6c5bd;
 }
 
-.catalog:hover span,
-.shipping:hover span,
-.about:hover span {
+.main-menu li:hover span {
 	border-bottom: none;
 }
 
 .main-menu > li{
 	display: inline-block;
-	margin-right: -8px;
+	margin-right: -10px;
 	padding: 7px;
 }
 
 .main-menu > li > a {
 	display: block;
 	padding: 6px 13px;
-	font-weight:bold;
 	font-size: 16px;
-	border-radius: 19px;
+	border-radius: 20px;
 	color: #fff;
 	text-decoration: none;
 }
 
-.main-menu > li > a:hover {
-	text-decoration: none;
+.main-menu > li:hover > a {
 	color: #000;
 	background: #f7f6f3;
-	border-color: #859D8F;
 }
 
 .main-menu > li > a:active {
-	box-shadow: inset 0 2px 3px  #666;
-	background: #ededed;  /*для активной кнопки фон #d07058*/
+	box-shadow: inset 0 2px 1px  #666;
+	background: #ededed;  /*для активной кнопки фон #d07058, color:#fff;*/
 	color: #333;
 }
 
@@ -110,8 +105,7 @@ header {
 	left: -5px;
 	background: #f8f7f4;
 	border-radius: 5px;
-	box-shadow: 0px 5px 10px  #666;
-	transition: 0.3s;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 	display: none;
 	z-index: 1;
 }
@@ -125,12 +119,8 @@ header {
 	margin: 3px 0;
 }
 
-.catalog-submenu a {
-	display: block;
-	padding: 0 12px;
-	font-size: 14px;
-	text-decoration: none;
-	color: #000;
+.catalog-submenu li:hover {
+	background-color: #fbded7;
 }
 
 .catalog-submenu li:first-child {
@@ -139,61 +129,45 @@ header {
 	border-bottom: 1px solid #d1d0ce;
 }
 
-.catalog-submenu li:first-child a {
-	padding: 5px 8px;
-}
-
-.catalog-submenu li:hover {
-	background-color: #fbded7;
-}
-
 .catalog-submenu li:first-child:hover {
 	background-color: #f8f7f4;
+	text-decoration: underline;
 }
 
 .catalog-submenu li:active {
 	background-color: #f6b5a5; /*page active #d07058, color #fff*/
 }
 
+.catalog-submenu a {
+	display: block;
+	padding: 0 12px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #000;
+}
 
+.catalog-submenu li:first-child a {
+	padding: 5px 8px;
+}
 
+/*=============== Header right ===============*/
 
 .header-right {
 	float: right;
 	width: 32%;
 	text-align: right;
 	padding-top: 19px;
-	/*outline: 1px solid red;*/
 }
 
 .header-right > div {
 	display: inline-block;
-	margin-right: -4px;
+	margin-right: -7px;
 }
+
+/*========== Search ===========*/
 
 .search-form {
 	position: relative;
-}
-
-.search-modal {
-	width: 270px;
-	padding: 15px;
-	background: #f8f7f4;
-	border-radius: 5px;
-	box-shadow: 0px 5px 10px  #666;
-	position: absolute;
-	top:47px;
-	right: 0px;
-	display: none;
-	z-index: 1;
-}
-
-.search-field {
-	border-radius: 3px;
-	border: 1px solid #d3d3d2;
-	padding: 10px;
-	font-size: 14px;
-	width: 100%;
 }
 
 .search-btn-container {
@@ -216,9 +190,32 @@ header {
 	background: #f8f7f4 url(../img/header-icon-sprite.png) no-repeat -5px -52px;
 }
 
+.search-modal {
+	width: 270px;
+	padding: 15px;
+	background: #f8f7f4;
+	border-radius: 5px;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top:47px;
+	right: 0px;
+	display: none;
+	z-index: 1;
+}
+
+.search-field {
+	border-radius: 3px;
+	border: 1px solid #d3d3d2;
+	padding: 10px;
+	font-size: 14px;
+	width: 100%;
+}
+
 .search-form:hover .search-modal {
 	display: block;
 }
+
+/*========== Login ===========*/
 
 .login {
 	position: relative;
@@ -252,7 +249,7 @@ header {
 	text-align: left;
 	background: #f8f7f4;
 	border-radius: 5px;
-	box-shadow: 0px 5px 10px  #666;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 	position: absolute;
 	top:46px;
 	right: 0px;
@@ -278,6 +275,7 @@ header {
 }
 
 .login-modal input[type="submit"] {
+	float: left;
 	font-size: 15px;
 	font-weight: bold;
 	color: #fff;
@@ -286,21 +284,20 @@ header {
 	border-radius: 20px;
 	background-color: #f16e4b;
 	background: linear-gradient(#f16e4b, #e74b36);
-	box-shadow: 0 2px 3px #cb695f; 
+	box-shadow: 0 2px 3px rgba(172, 16, 0, 0.7); 
 	outline: none;
 	cursor: pointer;
 	margin-right: 15px;
-	float: left;
 }
 
 .login-modal input[type="submit"]:hover {
 	background: linear-gradient(#f48a6f, #e86857);
-	box-shadow: 0 2px 3px #c35348; 
+	box-shadow: 0 1px 2px #ac1000; 
 }
 
 .login-modal input[type="submit"]:active {
 	background: linear-gradient(#d74632, #e1613e);
-	box-shadow: inset 0 2px 3px #9b3527; 
+	box-shadow: inset 0 2px 2px #942718; 
 }
 
 .login-modal a {
@@ -311,8 +308,10 @@ header {
 }
 
 .login-modal a:hover {
-	text-decoration: none;
+	color: #ec593c;
 }
+
+/*========== Cart ===========*/
 
 .cart {
 	position: relative;
@@ -347,7 +346,7 @@ header {
 	text-align: left;
 	background: #f8f7f4;
 	border-radius: 5px;
-	box-shadow: 0px 5px 10px  #666;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 	position: absolute;
 	top:46px;
 	right: 5px;
@@ -369,7 +368,6 @@ header {
 
 .delete::before, .delete::after {
 	content: "";
-	display: block;
 	height: 2px;
 	width: 18px;
 	background: #676767;
@@ -392,8 +390,7 @@ header {
 
 .cart-inner table {
 	width: 100%;
-	padding-bottom: 5px;
-	border-bottom: 2px solid #ccc;
+	border-bottom: 1px solid #cacac7;
 	font-size: 13px;
 }
 
@@ -432,25 +429,28 @@ header {
 	border-radius: 20px;
 	background-color: #f16e4b;
 	background: linear-gradient(#f16e4b, #e74b36);
-	box-shadow: 0 2px 3px #cb695f; 
+	box-shadow: 0 1px 2px #ac1000; 
 	outline: none;
 	cursor: pointer;
 }
 
 .cart-inner [type="submit"]:hover {
 	background: linear-gradient(#f48a6f, #e86857);
-	box-shadow: 0 2px 3px #c35348; 
+	box-shadow: 0 1px 2px #ac1000;
 }
 
 .cart-inner [type="submit"]:active {
 	background: linear-gradient(#d74632, #e1613e);
-	box-shadow: inset 0 2px 3px #9b3527;
+	box-shadow: inset 0 2px 2px #942718;
 }
 
 .total {
 	text-align: right;
 	font-weight: bold;
 }
+
+/*========== Contacts ===========*/
+
 .contacts {
 	float: right;
 	color: #fff;
@@ -471,14 +471,10 @@ header {
 
 /*=============== SLIDER ===============*/
 
+
 .slider-outer {
-	/*position: relative;*/
 	margin-left: -27px;
 	margin-right: -27px;
-}
-
-.slider {
-	position: relative;
 }
 
 .slider img {
@@ -486,12 +482,19 @@ header {
 	margin: 0 auto;
 }
 
+.slider li {
+	position: relative;
+}
+
 .text-wrapper {
-	font: bold 60px 'Roboto';
-	color: #fff;
-	top:350px;
-	padding-left: 265px;
 	position: absolute;
+	top:39%;
+	left: 22%;
+	width: 60%;
+	color: #fff;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 1;
 }
 
 .give-me-button {
@@ -504,19 +507,180 @@ header {
 	color:#fff;
 	text-shadow: 3px 3px 3px #be351e;
 	border-radius: 40px;
+	background-color: #f16e4b;
 	background: linear-gradient(#f16e4b, #e74b36);
-	box-shadow: 0 2px 3px #cb695f; 
-	top: 65%;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.7); 
+	top: 61%;
 	left: 39%;
 	z-index: 20;
 }
 
 .give-me-button:hover {
 	background: linear-gradient(#f48a6f, #e86857);
-	box-shadow: 0 2px 3px #c35348; 
+	box-shadow: 0 2px 2px #ac1000; 
 }
 
 .give-me-button:active {
 	background: linear-gradient(#d74632, #e1613e);
-	box-shadow: inset 0 2px 3px #9b3527;
+	box-shadow: inset 0 2px 2px #942718;
+}
+
+/*=============== PROMO SECTION ===============*/
+
+.promo-top {
+	padding-top: 10px;
+	margin-bottom: 30px;
+}
+
+.promo-top img {
+	display: block;
+	border-radius: 15px;
+	width: 100%;
+}
+
+.promo-top h3 {
+	margin: 0;
+	position: absolute;
+	top:8%;
+	left:20px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.promo-top p {
+	margin: 0;
+	padding-right: 15px;
+	position: absolute;
+	top:35%;
+	left:20px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.promo-top a {
+	position: absolute;
+	right: 25px;
+	bottom:10%;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	padding: 10px 20px;
+	border:none;
+	border-radius: 30px;
+	background-color: #f16e4b;
+	background: linear-gradient(#f16e4b, #e74b36);
+	box-shadow: 0 2px 2px #ac1000; 
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.promo-top a:hover {
+	background: linear-gradient(#f48a6f, #e86857);
+	box-shadow: 0 1px 2px #ac1000; 
+}
+
+.promo-top a:active {
+	background: linear-gradient(#d74632, #e1613e);
+	box-shadow: inset 0 2px 2px #942718;
+}
+
+.raspberry {
+	float: left;
+	width: 49%;
+	position: relative;
+}
+
+.chocolate {
+	float: right;
+	width: 49%;
+	position: relative;
+}
+
+/*========== Promo bottom ===========*/
+
+.promo-bottom {
+	padding-bottom: 20px;
+}
+
+.promo-bottom div {
+	position: relative;
+	width: 23%;
+	float: left;
+	margin-right: 2.6%;
+	padding: 10px 10px 55px;
+}
+
+.promo-bottom div:hover {
+	background: #a7b8ad;
+	border-radius: 5px;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+div.ice-promo4 {
+	margin-right: 0;
+}
+
+.hit {
+	position: absolute;
+	top:10px;
+	left:10px;
+}
+
+.promo-bottom h2 {
+	position: absolute;
+	left:10px;
+	top:43%;
+	color:#fff;
+	font-size: 42px;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #313235;
+}
+
+.promo-bottom p {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
+	color:#fff;
+	margin-top: 5px;
+}
+
+.promo-bottom span {
+	border-bottom: 1px solid #b6c5bd;
+}
+
+.promo-bottom a {
+	position: absolute;
+	left: 27px;
+	bottom:15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	padding: 10px 20px;
+	border:none;
+	border-radius: 30px;
+	background-color: #f16e4b;
+	background: linear-gradient(#f16e4b, #e74b36);
+	box-shadow: 0 2px 2px #ac1000; 
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	display: none;
+}
+
+.promo-bottom a:hover {
+	background: linear-gradient(#f48a6f, #e86857);
+	box-shadow: 0 1px 2px #ac1000; 
+}
+
+.promo-bottom a:active {
+	background: linear-gradient(#d74632, #e1613e);
+	box-shadow: inset 0 2px 2px #942718;
+}
+
+.promo-bottom div:hover a {
+	display: block;
 }
