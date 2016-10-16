@@ -25,7 +25,9 @@ body {
 	position: relative;
 }
 
+
 /*=============== Header ===============*/
+
 
 header {
 	position: absolute;
@@ -47,6 +49,7 @@ header {
 	display: block;
 	float: left;
 	margin-right: 10px;
+	margin-top: 5px;
 }
 
 .logo:hover {
@@ -73,7 +76,7 @@ header {
 .main-menu > li{
 	display: inline-block;
 	margin-right: -10px;
-	padding: 7px;
+	padding: 8px;
 }
 
 .main-menu > li > a {
@@ -150,7 +153,9 @@ header {
 	padding: 5px 8px;
 }
 
+
 /*=============== Header right ===============*/
+
 
 .header-right {
 	float: right;
@@ -164,14 +169,16 @@ header {
 	margin-right: -7px;
 }
 
+
 /*========== Search ===========*/
+
 
 .search-form {
 	position: relative;
 }
 
 .search-btn-container {
-	padding: 7px;
+	padding: 8px;
 }
 
 .search-btn {
@@ -208,21 +215,34 @@ header {
 	border: 1px solid #d3d3d2;
 	padding: 10px;
 	font-size: 14px;
+	outline: none;
 	width: 100%;
+}
+
+.search-field:hover {
+	padding: 9px;
+	border: 2px solid #C6C6C6;
+}
+
+.search-field:focus {
+	padding: 9px;
+	border: 2px solid #8FBEEC;
 }
 
 .search-form:hover .search-modal {
 	display: block;
 }
 
+
 /*========== Login ===========*/
+
 
 .login {
 	position: relative;
 }
 
 .login-btn-container {
-	padding: 7px;
+	padding: 8px;
 }
 
 .login-btn {
@@ -268,6 +288,19 @@ header {
 	padding: 10px;
 	font-size: 14px;
 	width: 100%;
+	outline: none;
+}
+
+.login-modal input[type="email"]:hover,
+.login-modal input[type="password"]:hover {
+	padding: 9px;
+	border: 2px solid #C6C6C6;
+}
+
+.login-modal input[type="email"]:focus,
+.login-modal input[type="password"]:focus {
+	padding: 9px;
+	border: 2px solid #8FBEEC;
 }
 
 .login-modal input[type="email"] {
@@ -311,14 +344,16 @@ header {
 	color: #ec593c;
 }
 
+
 /*========== Cart ===========*/
+
 
 .cart {
 	position: relative;
 }
 
 .cart-btn-container {
-	padding: 7px;
+	padding: 8px;
 }
 
 .cart-btn {
@@ -449,7 +484,9 @@ header {
 	font-weight: bold;
 }
 
+
 /*========== Contacts ===========*/
+
 
 .contacts {
 	float: right;
@@ -525,17 +562,31 @@ header {
 	box-shadow: inset 0 2px 2px #942718;
 }
 
+
 /*=============== PROMO SECTION ===============*/
+
 
 .promo-top {
 	padding-top: 10px;
 	margin-bottom: 30px;
 }
 
-.promo-top img {
-	display: block;
+.raspberry {
+	position: relative;
+	float: left;
+	width: 48.8%;
+	height: 230px;
 	border-radius: 15px;
-	width: 100%;
+	background: #cf1046 url(../img/raspberry-bg.jpg) no-repeat;
+}
+
+.chocolate {
+	position: relative;
+	float: right;
+	width: 48.8%;
+	height: 230px;
+	border-radius: 15px;
+	background: #513024 url(../img/chocolate-bg.jpg) no-repeat;
 }
 
 .promo-top h3 {
@@ -587,29 +638,19 @@ header {
 	box-shadow: inset 0 2px 2px #942718;
 }
 
-.raspberry {
-	float: left;
-	width: 49%;
-	position: relative;
-}
-
-.chocolate {
-	float: right;
-	width: 49%;
-	position: relative;
-}
 
 /*========== Promo bottom ===========*/
 
+
 .promo-bottom {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .promo-bottom div {
 	position: relative;
-	width: 23%;
+	width: 24%;
 	float: left;
-	margin-right: 2.6%;
+	margin-right: 1.33%;
 	padding: 10px 10px 55px;
 }
 
@@ -617,6 +658,10 @@ header {
 	background: #a7b8ad;
 	border-radius: 5px;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.promo-bottom div:hover span {
+	border-bottom: none;
 }
 
 div.ice-promo4 {
@@ -654,7 +699,7 @@ div.ice-promo4 {
 
 .promo-bottom a {
 	position: absolute;
-	left: 27px;
+	left: 34px;
 	bottom:15px;
 	font-size: 18px;
 	font-weight: bold;
@@ -683,4 +728,246 @@ div.ice-promo4 {
 
 .promo-bottom div:hover a {
 	display: block;
+}
+
+
+/*========== About block ===========*/
+
+
+.about-us {
+	margin-bottom: 40px;
+	padding: 15px 20px 5px;
+	background: #F1E2CF url(../img/vaflia-bg.jpg) repeat-y;
+	border-radius: 15px;
+}
+
+.about-us h3 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30px;
+	color:#323232;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.about-left {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+}
+
+.about-right {
+	float: right;
+	width: 49%;
+}
+
+.about-us p {
+	position: relative;
+	padding-left: 60px;
+	margin-bottom: 20px;
+	line-height: 22px;
+	color:#323232;
+}
+
+.about-us p::before {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left:0px;
+	top:-15px;
+	background: url(../img/description-sprite.png) no-repeat 0 0;
+}
+
+.about-left p:nth-child(1)::before {
+	background-position: 0 0;
+}
+
+.about-left p:nth-child(2)::before {
+	background-position: 0 -68px;
+}
+
+.about-right p:nth-child(1)::before {
+	background-position: -72px 0;
+}
+
+.about-right p:nth-child(2)::before {
+	background-position: -72px -68px;
+}
+
+
+/*========== Blog - Subscribe ===========*/
+
+
+.blog-subscribe {
+	padding-bottom: 40px;
+}
+
+.blog {
+	float: left;
+	width: 48.8%;
+	height: 220px;
+	padding: 20px;
+	border: 1px solid transparent;
+	border-radius: 15px;
+	background: url(../img/strawberry-bg.jpg) no-repeat -50px -50px;
+}
+
+.subscribe {
+	float: right;
+	width: 48.8%;
+	height: 220px;
+	background: url(../img/mail-bg.png);
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.subscribe-inner {
+	background: #F8F7F3;
+	padding: 15px 20px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	height: 100%;
+}
+
+.blog p {
+	font-weight: 500;
+	color: #5a5a5a;
+	margin: 5px 0;
+}
+
+.blog a {
+	font-size: 24px;
+	font-weight: bold;
+	color: #353535;
+}
+
+.blog a:hover {
+	text-decoration: none;
+}
+
+.subscribe p {
+	color: #5a5a5a;
+	line-height: 22px;
+	margin: 5px 0 40px;
+}
+
+.subscribe input[type="email"] {
+	padding: 13px;
+	margin-top: 1px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+	width: 70%;
+	outline: none;
+}
+
+.subscribe input[type="email"]:hover {
+	padding: 12px;
+	border: 2px solid #C6C6C6;
+}
+
+.subscribe input[type="email"]:focus {
+	padding: 12px;
+	border: 2px solid #8FBEEC;
+}
+
+.subscribe input[type="submit"] {
+	float: right;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #fff;
+	padding: 11px 20px;
+	border:none;
+	border-radius: 30px;
+	background-color: #f16e4b;
+	background: linear-gradient(#f16e4b, #e74b36);
+	box-shadow: 0 2px 2px #ac1000; 
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.subscribe input[type="submit"]:hover {
+	background: linear-gradient(#f48a6f, #e86857);
+	box-shadow: 0 1px 2px #ac1000; 
+}
+
+.subscribe input[type="submit"]:active {
+	background: linear-gradient(#d74632, #e1613e);
+	box-shadow: inset 0 2px 2px #942718;
+}
+
+
+/*========== Map - Address ===========*/
+
+
+.map-address {
+	margin-left: -27px;
+	margin-right: -27px;
+	position: relative;
+}
+
+.map-address img {
+	display: block;
+}
+
+.address {
+	position: absolute;
+	top:65px;
+	right: 27px;
+	width: 300px;
+	border-radius: 15px;
+	padding: 25px;
+	background: #fefefe;
+}
+
+.address p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #343434;
+	margin: 0;
+	margin-bottom: 2px;
+}
+
+.address h4 {
+	font-size: 18px;
+	line-height: 24px;
+	color: #343434;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.address .phone {
+	margin-bottom: 2px;
+}
+
+.address a {
+	display: block;
+	margin-top: 28px;
+	margin-bottom: 12px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	width: 100%;
+	padding: 10px 20px;
+	text-align: center;
+	border:none;
+	border-radius: 30px;
+	background-color: #f16e4b;
+	background: linear-gradient(#f16e4b, #e74b36);
+	box-shadow: 0 2px 2px #ac1000; 
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.address a:hover {
+	background: linear-gradient(#f48a6f, #e86857);
+	box-shadow: 0 1px 2px #ac1000; 
+}
+
+.address a:active {
+	background: linear-gradient(#d74632, #e1613e);
+	box-shadow: inset 0 2px 2px #942718;
 }
