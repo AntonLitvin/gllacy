@@ -538,9 +538,8 @@ header {
 
 .text-wrapper {
 	position: absolute;
-	top:42%;
-	left: 20%;
-	width: 60%;
+	bottom:32%;
+	width: 100%;
 	color: #fff;
 	font-size: 60px;
 	font-weight: bold;
@@ -691,7 +690,7 @@ div.ice-promo4 {
 .promo-bottom h2 {
 	position: absolute;
 	left:10px;
-	top:43%;
+	bottom:25%;
 	color:#fff;
 	font-size: 42px;
 	font-weight: bold;
@@ -713,12 +712,14 @@ div.ice-promo4 {
 
 .promo-bottom a {
 	position: absolute;
-	left: 34px;
+	min-width: 90%;
+	text-align: center;
+	left: 5%;
 	bottom:15px;
 	font-size: 18px;
 	font-weight: bold;
 	color: #fff;
-	padding: 10px 20px;
+	padding: 10px 0;
 	border:none;
 	border-radius: 30px;
 	background-color: #f16e4b;
@@ -871,7 +872,7 @@ div.ice-promo4 {
 	margin-top: 1px;
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
-	width: 70%;
+	width: 65%;
 	outline: none;
 }
 
@@ -886,12 +887,14 @@ div.ice-promo4 {
 }
 
 .subscribe input[type="submit"] {
+	width: 29%;
+	text-align: center;
 	float: right;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
 	color: #fff;
-	padding: 11px 20px;
+	padding: 11px 0px;
 	border:none;
 	border-radius: 30px;
 	background-color: #f16e4b;
@@ -997,9 +1000,9 @@ footer {
 .social {
 	display: inline-block;
 	vertical-align: top;
-	width: 20%;
+	width: 37%;
 	margin-top: 25px;
-	margin-right: 17%;
+	margin-right: 3%;
 }
 
 .social a {
@@ -1055,19 +1058,20 @@ footer {
 .documents {
 	display: inline-block;
 	vertical-align: bottom;
-	width: 30%;
+	width: 40%;
 	padding-top: 20px;
-	margin-right: 15%
+	margin-right: 2%
+
 }
 
 .doc-left {
 	float: left;
-	width: 40%;
+	width: 33%;
 }
 
 .doc-right {
 	float: right;
-	width: 60%;
+	width: 67%;
 }
 
 .documents a {
