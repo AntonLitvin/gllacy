@@ -177,6 +177,7 @@ header {
 .header-right > div {
 	display: inline-block;
 	margin-right: -7px;
+	vertical-align: top;
 }
 
 
@@ -942,6 +943,11 @@ div.ice-promo4 {
 
 .map-address img {
 	display: block;
+	border-radius: 15px;
+}
+
+.map-address iframe {
+	border-radius: 15px;
 }
 
 .address {
