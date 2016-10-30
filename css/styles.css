@@ -519,6 +519,9 @@ header {
 
 /*=============== SLIDER ===============*/
 
+.unslider-nav ol {
+	width: 30%;
+}
 
 .slider-outer {
 	margin-left: -27px;
