@@ -260,8 +260,10 @@
 <script>
 	jQuery(document).ready(function($) {
 		$('.slider').unslider({
-			autoplay: 7000,
+			autoplay: true,
 			arrows: false,
+			delay: 5000,
+			infinite: true,
 			animation: 'fade'
 		});
 	});
